@@ -13,6 +13,14 @@ document.addEventListener('DOMContentLoaded', () => {
             navToggle.innerHTML = navLinks.classList.contains('active') ? '✕' : '☰';
         });
     }
+    
+    // close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!navToggle.contains(e.target) && !navLinks.contains(e.target)) {
+            navLinks.classList.remove('active');
+            // reset icon when closing menu
+            if (navToggle) {
+                navToggle.innerHTML = '☰';
             }
         }
     });
