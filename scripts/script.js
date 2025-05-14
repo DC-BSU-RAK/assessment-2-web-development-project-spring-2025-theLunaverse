@@ -85,6 +85,10 @@ document.addEventListener('DOMContentLoaded', () => {
             else video.pause();
         });
     
+        // carousel functionality
+        initCarousel();
+    }
+    
         }
     }
 });
