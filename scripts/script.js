@@ -44,3 +44,5 @@ document.addEventListener('DOMContentLoaded', () => {
             return star;
         }
     
+        stars = Array(200).fill().map(() => createStar());
+    
