@@ -106,6 +106,23 @@ document.addEventListener('DOMContentLoaded', () => {
     
         window.addEventListener('scroll', animateTimeline);
         window.addEventListener('load', animateTimeline);
+    
+        // stats counter
+        const statsSection = document.querySelector('.stats-section');
+        if (statsSection) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounters();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+    
+            observer.observe(statsSection);
+        }
+    }
+});
         }
     }
 });
