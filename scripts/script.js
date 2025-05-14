@@ -55,6 +55,22 @@ document.addEventListener('DOMContentLoaded', () => {
             const moonCenterX = moonRect.left + moonRect.width / 2;
             const moonCenterY = moonRect.top + moonRect.height / 2;
     
+            stars.forEach(star => {
+                const speed = parseFloat(star.style.width) / 10;
+                const cursorXOffset = (mouseX - window.innerWidth / 2) * speed;
+                const cursorYOffset = (mouseY - window.innerHeight / 2) * speed;
+                
+                const starRect = star.getBoundingClientRect();
+                const starX = starRect.left + starRect.width / 2;
+                const starY = starRect.top + starRect.height / 2;
+                const moonPullStrength = 0.05;
+                const moonXOffset = (moonCenterX - starX) * moonPullStrength;
+                const moonYOffset = (moonCenterY - starY) * moonPullStrength;
+    
+                const finalXOffset = cursorXOffset + moonXOffset;
+                const finalYOffset = cursorYOffset + moonYOffset;
+    
+                star.style.transform = `translate(${finalXOffset}px, ${finalYOffset}px)`;
             });
         });
     }
