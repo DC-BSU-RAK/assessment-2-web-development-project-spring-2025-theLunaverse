@@ -89,6 +89,23 @@ document.addEventListener('DOMContentLoaded', () => {
         initCarousel();
     }
     
+    // about page specific functionality
+    const timelineSection = document.querySelector('.timeline-section');
+    if (timelineSection) {
+        // timeline animation
+        function animateTimeline() {
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            timelineItems.forEach(item => {
+                if (isElementInViewport(item)) {
+                    item.classList.add('visible');
+                } else {
+                    item.classList.remove('visible');
+                }
+            });
+        }
+    
+        window.addEventListener('scroll', animateTimeline);
+        window.addEventListener('load', animateTimeline);
         }
     }
 });
