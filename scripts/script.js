@@ -29,3 +29,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('container');
     const video = document.getElementById('moonVideo'); // element only on home page
     
+    // only create stars if we're on the home page (checking for the video element)
+    let stars = [];
+    if (container && video) {
+        function createStar() {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.width = Math.random() * 3 + 1 + 'px';
+            star.style.height = star.style.width;
+            star.style.left = Math.random() * window.innerWidth + 'px';
+            star.style.top = Math.random() * window.innerHeight + 'px';
+            star.style.animation = `twinkle ${Math.random() * 3 + 2}s ease-in-out infinite`;
+            container.appendChild(star);
+            return star;
+        }
+    
