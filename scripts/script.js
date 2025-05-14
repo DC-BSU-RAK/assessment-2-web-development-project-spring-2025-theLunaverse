@@ -134,6 +134,28 @@ const nextButton = document.querySelector('.next');
 const prevButton = document.querySelector('.prev');
 let currentIndex = 0;
 
+function updateCards() {
+    slides.forEach((slide, index) => {
+        let position = ((index - currentIndex) % slides.length + slides.length) % slides.length;
+        
+        if(position <= 1 || position === slides.length - 1) {
+            slide.style.display = 'block';
+            
+            if(position === 0) {
+                slide.classList.add('active');
+                slide.style.transform = 'translateY(-50px) scale(1.1)';
+                slide.style.zIndex = '2';
+            } else {
+                slide.classList.remove('active');
+                slide.style.transform = position === slides.length - 1 ? 
+                    'translateX(-100%) scale(0.8)' : 'translateX(100%) scale(0.8)';
+                slide.style.zIndex = '1';
+            }
+        } else {
+            slide.style.display = 'none';
+        }
+    });
+}
         }
     }
 });
