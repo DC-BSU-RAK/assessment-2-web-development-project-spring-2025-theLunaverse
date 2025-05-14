@@ -24,3 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+    
+    // stars functionality (only for the home page)
+    const container = document.getElementById('container');
+    const video = document.getElementById('moonVideo'); // element only on home page
+    
