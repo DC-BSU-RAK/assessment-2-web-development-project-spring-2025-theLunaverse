@@ -156,6 +156,20 @@ function updateCards() {
         }
     });
 }
+
+if (nextButton) {
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateCards();
+    });
+}
+
+if (prevButton) {
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        updateCards();
+    });
+}
         }
     }
 });
