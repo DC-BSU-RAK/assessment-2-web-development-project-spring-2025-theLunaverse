@@ -123,6 +123,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+// carousel functionality
+function initCarousel() {
+const track = document.querySelector('.carousel-track');
+if (!track) return; // exit if not on home page
+
+const slides = Array.from(track.children);
+const nextButton = document.querySelector('.next');
+const prevButton = document.querySelector('.prev');
+let currentIndex = 0;
+
         }
     }
 });
