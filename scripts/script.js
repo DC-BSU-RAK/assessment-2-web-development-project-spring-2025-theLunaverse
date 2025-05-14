@@ -46,3 +46,18 @@ document.addEventListener('DOMContentLoaded', () => {
     
         stars = Array(200).fill().map(() => createStar());
     
+        // parallax effect for stars (only on home page)
+        document.addEventListener('mousemove', (e) => {
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
+            
+            const moonRect = video.getBoundingClientRect();
+            const moonCenterX = moonRect.left + moonRect.width / 2;
+            const moonCenterY = moonRect.top + moonRect.height / 2;
+    
+            });
+        });
+    }
+        }
+    }
+});
