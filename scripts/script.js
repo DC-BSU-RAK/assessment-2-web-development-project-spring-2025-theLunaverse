@@ -74,6 +74,17 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+    
+    if (video) {
+        // video hover functionality
+        video.addEventListener('mouseover', () => video.play());
+        video.addEventListener('mouseout', () => video.pause());
+        video.addEventListener('touchstart', (e) => {
+            e.preventDefault();
+            if (video.paused) video.play();
+            else video.pause();
+        });
+    
         }
     }
 });
