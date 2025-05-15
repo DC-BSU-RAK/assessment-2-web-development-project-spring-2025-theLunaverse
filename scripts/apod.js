@@ -45,4 +45,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // set min date to when APOD started (June 16, 1995)
     dateInput.min = '1995-06-16';
+    
+    // set default date to January 11, 2006
+    const defaultDate = '2006-11-01';
+    dateInput.value = defaultDate;
 });
