@@ -79,4 +79,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 child.remove();
             }
         });
+        
+        // build URL with API key and date
+        const url = `${NASA_APOD_API}?api_key=${API_KEY}&date=${date}`;
+        
 });
