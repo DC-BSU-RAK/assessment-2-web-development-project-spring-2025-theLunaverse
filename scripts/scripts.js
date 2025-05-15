@@ -39,6 +39,11 @@ document.addEventListener('DOMContentLoaded', function() {
             // pause all videos
             pauseAllVideos();
             
+            // hide all mission sections
+            missionSections.forEach(section => {
+                section.classList.remove('active');
+            });
+            
 });
 
 document.addEventListener('DOMContentLoaded', () => {
