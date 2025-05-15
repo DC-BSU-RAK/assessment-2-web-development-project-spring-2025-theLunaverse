@@ -187,6 +187,21 @@ updateCards();
 
 }
 
+// stats counter animation
+function animateCounters() {
+const stats = document.querySelectorAll('.stat-number');
+const duration = 1000; // 1 second duration
+const frameRate = 60;
+const totalFrames = duration * (frameRate / 1000);
+
+stats.forEach(stat => {
+    const targetValue = +stat.getAttribute('data-count');
+    let currentFrame = 0;
+
+    function easeOutQuad(t) {
+        return t * (2 - t);
+    }
+
         }
     }
 });
