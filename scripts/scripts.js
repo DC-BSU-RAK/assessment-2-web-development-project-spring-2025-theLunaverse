@@ -49,6 +49,20 @@ document.addEventListener('DOMContentLoaded', function() {
             const activeSection = document.getElementById(`${missionId}-section`);
             activeSection.classList.add('active');
             
+            // play the video for the selected section
+            const activeVideo = activeSection.querySelector('video');
+            if (activeVideo) {
+                // reset to beginning and play
+                activeVideo.currentTime = 0;
+                activeVideo.play().catch(error => {
+                    console.warn('Auto-play was prevented:', error);
+                    // add a play button overlay if autoplay is blocked
+                    addPlayButtonOverlay(activeSection, activeVideo);
+                });
+            }
+        });
+    });
+    
 });
 
 document.addEventListener('DOMContentLoaded', () => {
