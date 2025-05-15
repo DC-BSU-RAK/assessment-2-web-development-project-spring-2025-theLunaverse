@@ -127,4 +127,16 @@ document.addEventListener('DOMContentLoaded', function() {
                     videoContainer.appendChild(iframe);
                     apodContent.appendChild(videoContainer);
                 }
+                
+                // create and append info section 
+                const infoSection = document.createElement('div');
+                infoSection.className = 'apod-info';
+                
+                const title = document.createElement('h2');
+                title.className = 'apod-title';
+                title.textContent = data.title;
+                
+                const dateDisplay = document.createElement('p');
+                dateDisplay.className = 'apod-date';
+                dateDisplay.textContent = formatDateForDisplay(date);
 });
