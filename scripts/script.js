@@ -268,3 +268,6 @@ behavior: 'smooth'
 });
 });
 
+// add scroll event listeners
+window.addEventListener('scroll', checkScroll);
+window.addEventListener('load', checkScroll);
