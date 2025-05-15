@@ -170,6 +170,23 @@ if (prevButton) {
         updateCards();
     });
 }
+
+// keyboard navigation for carousel
+document.addEventListener('keydown', (e) => {
+    if(e.key === 'ArrowRight') {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateCards();
+    }
+    if(e.key === 'ArrowLeft') {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        updateCards();
+    }
+});
+
+updateCards();
+
+}
+
         }
     }
 });
