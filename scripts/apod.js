@@ -42,4 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const today = new Date();
     const todayFormatted = formatDateForInput(today);
     dateInput.max = todayFormatted;
+    
+    // set min date to when APOD started (June 16, 1995)
+    dateInput.min = '1995-06-16';
 });
