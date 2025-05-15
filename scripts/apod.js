@@ -90,4 +90,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
                 return response.json();
             })
+            .then(data => {
+                // hide loading
+                loadingEl.style.display = 'none';
+                
 });
