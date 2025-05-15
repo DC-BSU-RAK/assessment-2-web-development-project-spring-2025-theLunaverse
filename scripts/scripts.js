@@ -35,6 +35,10 @@ document.addEventListener('DOMContentLoaded', function() {
             missionButtons.forEach(btn => btn.classList.remove('active'));
             // add active class to clicked button
             this.classList.add('active');
+            
+            // pause all videos
+            pauseAllVideos();
+            
 });
 
 document.addEventListener('DOMContentLoaded', () => {
