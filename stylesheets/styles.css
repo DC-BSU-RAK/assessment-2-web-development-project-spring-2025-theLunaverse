@@ -104,3 +104,17 @@ footer {
     color: #aaa;
 }
 
+.main-headline {
+    font-size: 4.32rem;
+    font-weight: 800;
+    position: absolute;
+    top: 8%;
+    left: 2%;
+    color: rgba(255, 255, 255, 0.866);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    max-width: 300px;
+    background-clip: text;
+    z-index: 801;
+}
+
