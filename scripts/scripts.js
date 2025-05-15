@@ -3,6 +3,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const missionButtons = document.querySelectorAll('.mission-button');
     const missionSections = document.querySelectorAll('.mission-section');
     
+    // function to pause all videos when not on the tab
+    function pauseAllVideos() {
+        const videos = document.querySelectorAll('video');
+        videos.forEach(video => {
+            video.pause();
+        });
+    }
+    
+    pauseAllVideos();
 });
 
 document.addEventListener('DOMContentLoaded', () => {
