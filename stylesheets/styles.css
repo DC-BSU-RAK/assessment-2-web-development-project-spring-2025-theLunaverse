@@ -97,3 +97,10 @@ video {
     display: block;
 }
 
+footer {
+    text-align: center;
+    padding: 1rem;
+    background:  #000000;
+    color: #aaa;
+}
+
