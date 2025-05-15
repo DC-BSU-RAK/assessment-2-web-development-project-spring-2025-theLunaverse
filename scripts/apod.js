@@ -49,4 +49,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // set default date to January 11, 2006
     const defaultDate = '2006-11-01';
     dateInput.value = defaultDate;
+    
+    // load the default date's APOD
+    getAPOD(defaultDate);
+    
 });
