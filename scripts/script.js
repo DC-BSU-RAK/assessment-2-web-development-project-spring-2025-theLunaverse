@@ -213,4 +213,6 @@ stats.forEach(stat => {
             stat.textContent = targetValue.toLocaleString();
         }
     }
+
+    updateCounter();
 });
