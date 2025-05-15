@@ -53,4 +53,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // load the default date's APOD
     getAPOD(defaultDate);
     
+    // event Listeners
+    viewDateBtn.addEventListener('click', function() {
+        getAPOD(dateInput.value);
+    });
 });
