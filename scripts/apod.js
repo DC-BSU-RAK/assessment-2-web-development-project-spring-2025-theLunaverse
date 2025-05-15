@@ -57,4 +57,14 @@ document.addEventListener('DOMContentLoaded', function() {
     viewDateBtn.addEventListener('click', function() {
         getAPOD(dateInput.value);
     });
+        
+    randomBtn.addEventListener('click', function() {
+        // generate random date between APOD start and today
+        const start = new Date('1995-06-16');
+        const randomDate = new Date(start.getTime() + Math.random() * (today.getTime() - start.getTime()));
+        const randomDateFormatted = formatDateForInput(randomDate);
+        
+        dateInput.value = randomDateFormatted;
+        getAPOD(randomDateFormatted);
+    });
 });
