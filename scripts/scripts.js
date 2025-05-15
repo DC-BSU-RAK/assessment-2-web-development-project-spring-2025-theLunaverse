@@ -63,6 +63,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+    // add a small animation effect when hovering over statistics
+    const statisticItems = document.querySelectorAll('.statistic-item');
+    statisticItems.forEach(item => {
+        item.addEventListener('mouseenter', function() {
+            // scale up slightly and add a glow effect
+            this.querySelector('.statistic-number').style.transform = 'scale(1.05)';
+            this.querySelector('.statistic-number').style.textShadow = '0 0 15px rgba(255, 215, 0, 0.7)';
+        });
 });
 
 document.addEventListener('DOMContentLoaded', () => {
