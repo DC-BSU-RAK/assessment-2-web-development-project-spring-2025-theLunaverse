@@ -67,4 +67,16 @@ document.addEventListener('DOMContentLoaded', function() {
         dateInput.value = randomDateFormatted;
         getAPOD(randomDateFormatted);
     });
+    
+    // functions
+    function getAPOD(date) {
+        // show loading
+        loadingEl.style.display = 'flex';
+        
+        // clear previous content (except loading indicator)
+        Array.from(apodContainer.children).forEach(child => {
+            if (child !== loadingEl) {
+                child.remove();
+            }
+        });
 });
