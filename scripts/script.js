@@ -242,3 +242,15 @@ if (elementTop < triggerPoint && elementBottom > 0) {
 });
 
 }
+
+// scroll indicator functionality
+document.addEventListener('scroll', function() {
+const scrollIndicator = document.querySelector('.scroll-indicator');
+if (scrollIndicator) {
+if (window.scrollY > 0) {
+scrollIndicator.style.display = 'none';
+} else {
+scrollIndicator.style.display = 'flex';
+}
+}
+});
