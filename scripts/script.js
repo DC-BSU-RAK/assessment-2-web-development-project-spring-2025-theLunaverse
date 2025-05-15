@@ -216,3 +216,9 @@ stats.forEach(stat => {
 
     updateCounter();
 });
+// check if timeline element is in viewport
+function isElementInViewport(el) {
+const rect = el.getBoundingClientRect();
+const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+return (rect.top <= windowHeight * 0.8 && rect.bottom >= windowHeight * 0.2);
+}
