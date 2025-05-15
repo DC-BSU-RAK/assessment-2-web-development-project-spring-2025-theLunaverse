@@ -12,6 +12,22 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     pauseAllVideos();
+    
+    // play the video for the active section (on page load)
+    const initialActiveSection = document.querySelector('.mission-section.active');
+    if (initialActiveSection) {
+        const initialVideo = initialActiveSection.querySelector('video');
+        if (initialVideo) {
+            // reset to beginning and play
+            initialVideo.currentTime = 0;
+            initialVideo.play().catch(error => {
+                console.warn('Auto-play was prevented:', error);
+                // add a play button overlay if autoplay is blocked
+                addPlayButtonOverlay(initialActiveSection, initialVideo);
+            });
+        }
+    }
+    
 });
 
 document.addEventListener('DOMContentLoaded', () => {
