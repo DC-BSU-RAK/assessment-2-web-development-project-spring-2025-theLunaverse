@@ -139,4 +139,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 const dateDisplay = document.createElement('p');
                 dateDisplay.className = 'apod-date';
                 dateDisplay.textContent = formatDateForDisplay(date);
+                
+                // add title and date
+                infoSection.appendChild(title);
+                infoSection.appendChild(dateDisplay);
+                
+                apodContent.appendChild(infoSection);
+                apodContainer.appendChild(apodContent);
+            })
+            });
+    }
 });
