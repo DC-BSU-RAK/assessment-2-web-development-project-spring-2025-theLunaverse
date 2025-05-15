@@ -37,4 +37,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // my NASA API Keys
     const API_KEY = '92Z9D31r5LhqTH14qNIbPRBG2GM5HQz8XcleNwvA';
     const NASA_APOD_API = 'https://api.nasa.gov/planetary/apod';
+    
+    // set date input max to today
+    const today = new Date();
+    const todayFormatted = formatDateForInput(today);
+    dateInput.max = todayFormatted;
 });
