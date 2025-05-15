@@ -202,6 +202,15 @@ stats.forEach(stat => {
         return t * (2 - t);
     }
 
+    function updateCounter() {
+        if (currentFrame <= totalFrames) {
+            const progress = easeOutQuad(currentFrame / totalFrames);
+            const currentValue = Math.round(targetValue * progress);
+            stat.textContent = currentValue.toLocaleString();
+            currentFrame++;
+            requestAnimationFrame(updateCounter);
+        } else {
+            stat.textContent = targetValue.toLocaleString();
         }
     }
 });
