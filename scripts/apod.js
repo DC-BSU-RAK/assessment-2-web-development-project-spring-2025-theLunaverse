@@ -25,3 +25,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // DOM Elements
+    const apodContainer = document.getElementById('apod-container');
+    const dateInput = document.getElementById('apod-date');
+    const viewDateBtn = document.getElementById('view-date-btn');
+    const randomBtn = document.getElementById('random-btn');
+    const loadingEl = document.getElementById('loading');
+});
