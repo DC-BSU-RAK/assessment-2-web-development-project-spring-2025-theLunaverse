@@ -28,6 +28,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
+    // add click event listeners to tab buttons
+    missionButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // remove active class from all buttons
+            missionButtons.forEach(btn => btn.classList.remove('active'));
+            // add active class to clicked button
+            this.classList.add('active');
 });
 
 document.addEventListener('DOMContentLoaded', () => {
