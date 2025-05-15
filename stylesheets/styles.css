@@ -47,3 +47,10 @@ body {
     border-bottom: 2px solid #ffd98a;
 }
 
+.nav-toggle {
+    display: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
