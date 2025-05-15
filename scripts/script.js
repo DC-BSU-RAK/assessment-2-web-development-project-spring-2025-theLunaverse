@@ -225,3 +225,20 @@ const rect = el.getBoundingClientRect();
 const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
 return (rect.top <= windowHeight * 0.8 && rect.bottom >= windowHeight * 0.2);
 }
+
+// fade up animation for elements
+function checkScroll() {
+const elements = document.querySelectorAll('.fade-up');
+elements.forEach(element => {
+const elementTop = element.getBoundingClientRect().top;
+const elementBottom = element.getBoundingClientRect().bottom;
+const triggerPoint = window.innerHeight * 0.8;
+
+if (elementTop < triggerPoint && elementBottom > 0) {
+    element.classList.add('active');
+} else {
+    element.classList.remove('active');
+}
+});
+
+}
