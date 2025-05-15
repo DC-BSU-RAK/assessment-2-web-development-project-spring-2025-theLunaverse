@@ -76,3 +76,24 @@ body {
     }
 }
 
+.video-container {
+    position: absolute;
+    top: 52%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 650px; 
+    height: 650px;
+    border-radius: 50%; 
+    overflow: hidden;
+    z-index: 800; /* HIGHER than stars */
+}
+
+/* styling for the video itself */
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
