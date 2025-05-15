@@ -94,4 +94,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 // hide loading
                 loadingEl.style.display = 'none';
                 
+                // create APOD content
+                const apodContent = document.createElement('div');
+                apodContent.className = 'apod-content';
+                
 });
