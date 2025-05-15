@@ -98,4 +98,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 const apodContent = document.createElement('div');
                 apodContent.className = 'apod-content';
                 
+                // handle media (image or video)
+                if (data.media_type === 'image') {
+                    // for images
+                    const img = document.createElement('img');
+                    img.src = data.hdurl || data.url;
+                    img.alt = data.title;
+                    img.className = 'apod-media';
+                    
+                    // add click to view full size
+                    img.addEventListener('click', function() {
+                        window.open(data.hdurl || data.url, '_blank');
+                    });
 });
