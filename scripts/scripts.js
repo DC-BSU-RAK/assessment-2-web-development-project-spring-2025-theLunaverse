@@ -71,6 +71,13 @@ document.addEventListener('DOMContentLoaded', function() {
             this.querySelector('.statistic-number').style.transform = 'scale(1.05)';
             this.querySelector('.statistic-number').style.textShadow = '0 0 15px rgba(255, 215, 0, 0.7)';
         });
+        
+        item.addEventListener('mouseleave', function() {
+            // return to normal
+            this.querySelector('.statistic-number').style.transform = 'scale(1)';
+            this.querySelector('.statistic-number').style.textShadow = 'none';
+        });
+    });
 });
 
 document.addEventListener('DOMContentLoaded', () => {
