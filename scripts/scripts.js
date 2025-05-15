@@ -1,3 +1,10 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // tab switching functionality
+    const missionButtons = document.querySelectorAll('.mission-button');
+    const missionSections = document.querySelectorAll('.mission-section');
+    
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     // navigation functionality
     const navToggle = document.getElementById('navToggle');
