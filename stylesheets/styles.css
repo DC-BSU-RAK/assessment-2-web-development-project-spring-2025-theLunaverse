@@ -118,3 +118,15 @@ footer {
     z-index: 801;
 }
 
+.headline-description {
+    position: absolute;
+    top: 40%; 
+    left: 2%;
+    max-width: 425px; 
+    font-size: 1rem; 
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.608);
+    text-align: left;
+    z-index: 801;
+}
+
