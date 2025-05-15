@@ -33,4 +33,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const viewDateBtn = document.getElementById('view-date-btn');
     const randomBtn = document.getElementById('random-btn');
     const loadingEl = document.getElementById('loading');
+    
+    // my NASA API Keys
+    const API_KEY = '92Z9D31r5LhqTH14qNIbPRBG2GM5HQz8XcleNwvA';
+    const NASA_APOD_API = 'https://api.nasa.gov/planetary/apod';
 });
