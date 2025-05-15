@@ -60,3 +60,19 @@ body {
     width: 100vw;
 }
 
+.star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease-out;
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+}
+
