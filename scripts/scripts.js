@@ -44,6 +44,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 section.classList.remove('active');
             });
             
+            // show the corresponding mission section
+            const missionId = this.getAttribute('data-mission');
+            const activeSection = document.getElementById(`${missionId}-section`);
+            activeSection.classList.add('active');
+            
 });
 
 document.addEventListener('DOMContentLoaded', () => {
