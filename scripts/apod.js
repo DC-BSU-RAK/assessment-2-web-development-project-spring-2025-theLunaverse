@@ -83,4 +83,11 @@ document.addEventListener('DOMContentLoaded', function() {
         // build URL with API key and date
         const url = `${NASA_APOD_API}?api_key=${API_KEY}&date=${date}`;
         
+        fetch(url)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                return response.json();
+            })
 });
