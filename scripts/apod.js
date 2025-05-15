@@ -110,4 +110,21 @@ document.addEventListener('DOMContentLoaded', function() {
                     img.addEventListener('click', function() {
                         window.open(data.hdurl || data.url, '_blank');
                     });
+                    
+                    apodContent.appendChild(img);
+                } else if (data.media_type === 'video') {
+                    // for videos (usually YouTube)
+                    const videoContainer = document.createElement('div');
+                    videoContainer.className = 'apod-video-container';
+                    
+                    const iframe = document.createElement('iframe');
+                    iframe.src = data.url;
+                    iframe.title = data.title;
+                    iframe.frameBorder = '0';
+                    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+                    iframe.allowFullscreen = true;
+                    
+                    videoContainer.appendChild(iframe);
+                    apodContent.appendChild(videoContainer);
+                }
 });
