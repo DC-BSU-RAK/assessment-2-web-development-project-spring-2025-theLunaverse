@@ -147,6 +147,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 apodContent.appendChild(infoSection);
                 apodContainer.appendChild(apodContent);
             })
+            .catch(error => {
+                console.error('Error fetching APOD:', error);
+                loadingEl.style.display = 'none';
+                
+                // show error message
+                const errorMsg = document.createElement('div');
+                errorMsg.className = 'error-message';
+                errorMsg.textContent = 'Sorry, there was an error loading the astronomy picture. Please try again later.';
+                apodContainer.appendChild(errorMsg);
             });
     }
 });
