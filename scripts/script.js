@@ -216,6 +216,9 @@ stats.forEach(stat => {
 
     updateCounter();
 });
+
+}
+
 // check if timeline element is in viewport
 function isElementInViewport(el) {
 const rect = el.getBoundingClientRect();
