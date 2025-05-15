@@ -38,3 +38,12 @@ body {
     transition: all 0.3s ease;
 }
 
+.nav-links a:hover {
+    color: #ffd98a;
+}
+
+.nav-links a.active {
+    color: #ffd98a;
+    border-bottom: 2px solid #ffd98a;
+}
+
