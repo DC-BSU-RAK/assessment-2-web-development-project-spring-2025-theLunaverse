@@ -236,3 +236,52 @@ footer p {
     text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+    .mission-container {
+        height: 90vh;
+    }
+    
+    .mission-tabs {
+        flex-wrap: wrap;
+    }
+    
+    .tab-button {
+        margin-bottom: 0.5rem;
+    }
+    
+    .mission-content {
+        padding: 1.5rem 1rem;
+    }
+    
+    .statistics-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    
+    .statistic-item {
+        width: 45%;
+        margin: 0.5rem 0;
+    }
+    
+    .top-left, .middle-left, .bottom-left {
+        align-self: flex-start;
+    }
+    
+    .top-right, .middle-right, .bottom-right {
+        align-self: flex-end;
+    }
+    
+    .statistic-number {
+        font-size: 1.6rem;
+    }
+    
+    .statistic-label {
+        font-size: 0.7rem;
+    }
+    
+    .mission-header h2 {
+        font-size: 1.8rem;
+    }
+}
+
