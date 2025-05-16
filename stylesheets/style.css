@@ -297,3 +297,37 @@ footer p {
     }
 }
 
+.mission-section.active .statistic-item {
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
+}
+
+.mission-section.active .top-left {
+    animation-delay: 0.2s;
+}
+
+.mission-section.active .top-right {
+    animation-delay: 0.3s;
+}
+
+.mission-section.active .middle-left {
+    animation-delay: 0.4s;
+}
+
+.mission-section.active .middle-right {
+    animation-delay: 0.5s;
+}
+
+.mission-section.active .bottom-left {
+    animation-delay: 0.6s;
+}
+
+.mission-section.active .bottom-right {
+    animation-delay: 0.7s;
+}
+
+.mission-section.active .mission-header,
+.mission-section.active {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
