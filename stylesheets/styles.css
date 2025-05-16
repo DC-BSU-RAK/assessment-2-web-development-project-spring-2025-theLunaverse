@@ -618,6 +618,19 @@ footer p {
     object-fit: cover;
 }
 
+.explore-btn {
+    z-index: 2;
+    display: inline-block;
+    padding: 12px 24px;
+    background: rgba(255, 217, 138, 0.2);
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    z-index: 801;
+}
 
 .contact-video{
     z-index: 0;
