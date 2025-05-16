@@ -139,3 +139,21 @@ header {
     flex-direction: column;
     padding: 2rem;
 }
+
+.mission-header {
+    text-align: center;
+}
+
+.mission-header h2 {
+    font-size: 3rem; /* Smaller font size */
+    color: #ffd98a;
+    font-weight: 400;
+}
+
+.mission-duration {
+    font-size: 1.5rem; /* Smaller font size */
+    color: #fff;
+    font-weight: 300;
+}
+
+
