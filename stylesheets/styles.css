@@ -882,3 +882,9 @@ footer p {
     }
 }
 
+main {
+    max-width: 1200px;
+    margin: 0rem auto 0rem auto;
+    padding: 0 1rem;
+}
+
