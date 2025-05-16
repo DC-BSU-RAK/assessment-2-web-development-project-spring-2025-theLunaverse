@@ -754,3 +754,131 @@ footer p {
 .form-group:nth-child(3) { animation-delay: 0.3s; }
 .form-group:nth-child(4) { animation-delay: 0.4s; }
 
+/* responsive design for phone */
+@media screen and (max-width: 768px) {
+ 
+    /* navigation */
+    .nav-toggle {
+        display: block;
+        position: fixed;
+        right: 20px;
+        top: 20px;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px; 
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        padding: 80px 0 1rem 0;
+        transition: right 0.3s ease;
+        margin: 0;
+    }
+
+    .nav-links.active {
+        right: 0; 
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .nav-links a:hover {
+        background: rgba(255, 217, 138, 0.1);
+    }
+    
+    /* main headline and description */
+    .main-headline {
+        font-size: 2.8rem;
+        top: 10%;
+        max-width: 200px;
+    }
+
+    .headline-description {
+        top: 30%;
+        max-width: 250px;
+        font-size: 0.9rem;
+    }
+
+    .news-button {
+        top: 70%;
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+
+    /* video container */
+    .video-container {
+        width: 400px;
+        height: 400px;
+    }
+
+    /* carousel effect */
+    .carousel-container {
+        height: 350px;
+    }
+
+    .flashcard {
+        width: 200px;
+        height: 300px;
+    }
+
+    .flashcard-front h3 {
+        font-size: 1.1rem;
+    }
+
+    .carousel-button {
+        width: 40px;
+        height: 40px;
+        font-size: 1.4rem;
+    }
+
+    .flashcard:not(.active) {
+        transform: translateX(calc(50% + 100px)) scale(0.8);
+    }
+
+    .flashcard:not(.active) ~ .flashcard:not(.active) {
+        transform: translateX(calc(-50% - 100px)) scale(0.8);
+    }
+
+    /* about nasa page */
+    .about-nasa h1 {
+        font-size: 2.5rem;
+    }
+
+    .timeline-year {
+        position: absolute;
+        right: -35px;
+    }    
+
+    .timeline-item:nth-child(odd) {
+        right: 20%;
+    }
+    .timeline-item:nth-child(even) {
+        left: 50%;
+    }
+
+    /* contact us */
+    .info-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .info-item {
+        justify-content: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
