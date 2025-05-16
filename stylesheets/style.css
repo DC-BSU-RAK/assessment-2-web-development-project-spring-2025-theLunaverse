@@ -69,3 +69,29 @@ header {
     font-size: 1.5rem;
     cursor: pointer;
 }
+
+/* MISSION CONTAINER */
+.mission-container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    max-height: 800px; 
+    line-height: 1.6;
+}
+
+.mission-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease, visibility 1s ease;
+}
+
+.mission-section.active {
+    opacity: 1;
+    visibility: visible;
+}
+
