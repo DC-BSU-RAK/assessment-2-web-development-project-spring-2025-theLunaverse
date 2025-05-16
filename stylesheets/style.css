@@ -157,3 +157,42 @@ header {
 }
 
 
+/* STATS CONTAINER - Revised Layout */
+.statistics-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.8fr 1fr 0.8fr;
+    gap: 0.5rem;
+    height: 70%;
+    margin-top: -8rem;
+}
+
+.statistic-item {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.statistic-number {
+    font-size: 2.8rem;
+    color: #ffd98a;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.statistic-label {
+    font-size: 0.85rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
