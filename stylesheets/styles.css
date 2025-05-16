@@ -507,3 +507,38 @@ footer p {
     transform: translateY(0);
 }
 
+.about-nasa {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.about-nasa h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(77, 171, 247, 0.5);
+    animation: fadeIn 1s ease-out;
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+.about-nasa p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.6;
+    color: #adb5bd;
+    animation: fadeIn 1.5s ease-out;
+    position: relative;
+    z-index: 2;
+}
+
