@@ -127,3 +127,15 @@ header {
     object-fit: cover;
 }
 
+/* MISSION CONTENT */
+.mission-content {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    width: 90%;
+    max-width: 1400px; /* Increased max-width to fit all content */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
