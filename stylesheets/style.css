@@ -331,3 +331,34 @@ footer p {
     animation: fadeInUp 0.8s ease forwards;
 }
 
+.mission-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.mission-button {
+    background-color: #1a1a1a; /* Dark gray/black */
+    color: #e6e6e6; /* Off-white */
+    border: 2px solid #333;
+    border-radius: 4px;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.mission-button:hover {
+    background-color: #2a2a2a; /* Slightly lighter gray */
+    border-color: #d6c8b6; /* Light beige */
+}
+
+.mission-button.active {
+    background-color: #000;
+    color: #d6c8b6; /* Beige */
+    border-color: #d6c8b6; /* Beige */
+    font-weight: 500;
+}
+
