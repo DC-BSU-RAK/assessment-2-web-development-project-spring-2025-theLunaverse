@@ -21,3 +21,51 @@ header {
     margin-left: 100px;
 }
 
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 2rem 0.5rem;
+    background: rgba(0, 0, 0, 0.01);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 50px;
+    width: auto; 
+    display: block; 
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffd98a;
+}
+
+.nav-links a.active {
+    color: #ffd98a;
+    border-bottom: 2px solid #ffd98a;
+}
+
+.nav-toggle {
+    display: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
