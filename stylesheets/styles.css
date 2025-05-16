@@ -704,3 +704,53 @@ footer p {
     transform: translateY(-2px);
 }
 
+.contact-info {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 30px 5%;
+    margin-top: auto;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+    color: white;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+}
+
+.social-btn:hover .social-icon {
+    filter: brightness(0) invert(80%) sepia(50%) saturate(500%) hue-rotate(348deg) brightness(101%) contrast(97%); /* Changes to your gold color on hover */
+}
+
+/* animation for form elements */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-group {
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 0;
+}
+
+.form-group:nth-child(1) { animation-delay: 0.1s; }
+.form-group:nth-child(2) { animation-delay: 0.2s; }
+.form-group:nth-child(3) { animation-delay: 0.3s; }
+.form-group:nth-child(4) { animation-delay: 0.4s; }
+
