@@ -1065,3 +1065,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         justify-content: space-between;
     }
     
+    main {
+        margin-top: 0.1rem;
+    }
+}
